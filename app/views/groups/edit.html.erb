@@ -1,0 +1,18 @@
+<div>
+<h2 class="text-center">编辑讨论版</h2>
+<hr>
+
+<h4>修一修 改一改 ;   未来更美好 ^_^ </h4>
+
+<%= form_for @group do |f| %>
+标题：
+<%= f.text_field :title %>
+<br>
+叙述：
+<br>
+<%= f.text_area :description %>
+<h6>  提示：修改完后记得点“提交”，才会保存生效哦～</h6>
+<br>
+<%= f.submit "Submit | 提交", :disable_with => 'Submiting...'%>
+<% end %>
+</div>
